@@ -4,99 +4,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack/Babel-demo</title>
+  <title>Inventa</title>
 </head>
 
 <body>
-  <!--
-    This div is added to remove the flicker that comes from bootstrap being loaded
-    first in index.js
-    REMEMBER to set display to "block" in index.js, otherwise you will not see anything
-  -->
-  <div id="all-content" style="display: none;">
+
+<!-- Starten af top kollone -->
+  <div id="all-content" style="display:none;">
     <ul id="menu" class="header">
-      <li><a href="" id="about">About</a></li>
-      <li><a href="" id="ex1">Ex1</a></li>
-      <li><a href="" id="ex2">Ex2</a></li>
-      <li><a href="" id="ex3">Ex3</a></li>
+      <li><a href="" id="home">Find People</a></li>
+      <li><a href="" id="groupMembers">Production Information</a></li>
+      <li><a href="" id="allEndPoints">All Endpoints</a></li>
     </ul>
-
-    <div class="content">
-
-      <!-- This is were you should place your basic HTML for exercise-1 -->
-      <div id="ex1_html" style="display:none;">
-        <h3>Exercise 1</h3>
-        <p>Add your basic HTML for Exercise 1 here</p>
-        <ul id="jokes"></ul>
-
-      </div>
-      <!-- End of HTML for exercise-1 -->
-
-
-
-      <!-- This is were you should place your basic HTML for exercise-2 -->
-      <div id="ex2_html" style="display:none;">
-        <h3>Exercise 2</h3>
-        <p id="ex2p">Add your basic HTML for Exercise 2 here</p>
-      </div>
-      <!-- End of HTML for exercise-2 -->
-
-
-      <!-- This is were you should place your basic HTML for exercise-3 -->
-      <div id="ex3_html" style="display:none;">
-        <h3>Ex-3</h3>
-        <p>Add your basic HTML for Exercise 3 here</p>
-
-        <div class="row" style="min-height: 5em;"">
-      <div class=" col-md-8 pre-scrollable" style="background-color: lightgrey;">
-          <h5>All Users</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Age</th>
-                <th>Name
-                <th>
-                <th>Gender</th>
-                <th>Email </th>
-            </thead>
-            <tbody id="allUserRows">
-            <tbody>
-          </table>
-        </div>
-        <div class="col-md-4" style="background-color: powderblue;">
-          <h5>Find User</h5>
-        </div>
-      </div>
-      <div class="row" style="min-height: 5em;">
-        <div class="col-md-4" style="background-color: powderblue;">
-          <h5>Add User</h5>
-        </div>
-        <div class="col-md-4" style="background-color: lightgrey;">
-          <h5>Edit User</h5>
-        </div>
-        <div class="col-md-4" style="background-color: powderblue;">
-          <h5>Delete User</h5>
-        </div>
-      </div>
-      <!-- </div> -->
-      <!-- End of HTML for exercise-3 -->
-
-      <!---- HTML for the About page -->
-      <div id="about_html" style="display:none;">
-        <h3>About</h3>
-        <p>Watch the small video given as intro to this code, BEFORE you start using it</p>
-      </div>
-      <!-- End of HTML for ABOUT Page -->
-
-    </div>
-
-    <!--End of all content -->
   </div>
+<!-- Slutningen af top kollone -->
 
-  <!-- #################################################################-->
-  <!-- IMPORTANT  DO NOT IMPORT ANY JavaScript in this file by YOURSELF -->
-  <!-- #################################################################-->
+<!-- Starten af person finder -->
+      <div id="home_html" style="display:none;">
+          <h1 class="titleHeader">Inventa</h1>
+          <h2 class="subHeader">Helping you find people, companies, and more</h2>
+          <div class="topnav">
+            <input id="searchField" class="searchContainer" type="text" placeholder="Type any information....">
+            <button id="findButton" class="searchButton" type="button">Find</button>
+          </div>
+          <div id="result" class="returnedResult" style="overflow-y:scroll; height:700px;"></div>
+      </div>
+      
+    
+      
+<!-- Slutningen af person finder -->
+
+<!-- Starten af produktions informationssiden-->
+      <div id="groupMembers_html" style="display:none;">
+          <h1 class="basicHeader">Information regarding Production</h1>
+
+
+          <p class="productInformation">Information regarding production</p>
+          <p class="productInformationText">Vi stødte ind i et stort problem og kunne ikke tilføje personer til databasen. Vi fik hjælp af tutor til at fikse problemet, men det var så ikke helt løst alligevel. Vi fik lavet nogle endpoints som virker, men langt fra færdig. 
+            Vores frontend benytter sig derfor af en anden api lige pt, dette er for at vise at vores frontend fungerer som planlagt. Vi kunne ikke demonstrere dette med vores eget api, da vi som sagt ikke kunne tilføje personer til vores database. 
+            Index siden virker ikke optimalt i form af placering af knapper på nogen browsere. På den maskine den blev designet på virker det optimalt, men på andre medlemmers computer virker det ikke som det skal. 
+          </p>
+
+          <p class ="memberOne"> Artem Ivanov</p> 
+          <p class ="memberOneText">Jeg har oprettet personfacade og de tilhørende metoder, PhoneDTO, været indover udviklingen af diverse DTO klasser og været med til at teste  personFacadeTest</p>
+         
+
+          <p class="memberTwo">Daniel Poulsen</p>
+          <p class="memberTwoText">Jeg har lavet entitet klasserne og resource klasserne. DTO klasserne har jeg lavet og Artem har også være inde over. AddressFacade og HobbyFacade har jeg lavet og dele af PersonFacade. Dertil også de tilhørende test.</p>
+
+
+          <p class="memberThree">Lasse Birk</p>
+          <p class="memberThreeText">Jeg har lavet alt logikken omkring hvordan vores side skal håndtere data, det vil sige hvordan vi fetcher og mapper data. Jeg har også lavet Html’en, og jeg har til bedste evne prøvet at gøre den så brugervenligt som muligt. 
+            Jeg tog denne del af projektet da jeg ikke er ret god til JavaScript og HTML, og jeg ville gerne forbedre mig på emnet. </p>
+      </div>
+<!-- Slutningen af produktions informationssiden -->
+
+<!-- Starten af endpointssiden-->
+      <div id="allEndPoints_html" style="display:none;">
+          <h3 class="basicHeader">All Available Endpoints</h3>
+
+          <table class="endpointTable">
+            <tr>
+              <th>Method</th>
+              <th>URL</th>
+              <th>Request Body(JSON)</th>
+              <th>Response(JSON)</th>
+              <th>Error(e)</th>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>https://dgpcoding.com/api/hobby/personcount/Golf</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>https://dgpcoding.com/api/hobby/persons/Golf</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>https://dgpcoding.com/api/Address/allZipcodes</td>
+              <td>-</td>
+              <td>-</td>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>https://dgpcoding.com/api/person/allPersons</td>
+              <td>-</td>
+              <td></td>
+              <td>-</td>
+            </tr>
+          </table>
+      </div>
+<!-- Slutningen af endpointssiden -->
+
+
+
 
 </body>
 

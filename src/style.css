@@ -8,7 +8,8 @@ ul.header {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color:black;
+  font-family: Copperplate;
 }
 
 ul.header li {
@@ -23,12 +24,10 @@ ul.header li a {
   text-decoration: none;
 }
 ul.header li a:hover:not(.active) {
-  background-color: #111;
+  background-color: black;
 }
 
-.selected {
-  background-color: #4caf50;
-}
+
 
 .content {
   margin-left: 6%;
@@ -36,4 +35,230 @@ ul.header li a:hover:not(.active) {
   padding: 18px 16px;
   height: 1000px;
   font-size: small;
+}
+
+.topnav {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  border: 15px;
+  padding: 10px;
+}
+
+.searchContainer{
+  transition: all 0.5s;
+  padding: 10px 30px;
+  margin-right: 16px;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: Copperplate;
+}
+
+.searchButton{
+  border: none;
+  padding: 12px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-family: Copperplate;
+}
+.titleHeader{
+  color: black;
+  font-family: Copperplate;
+  font-size: 75px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  border: 15px;
+  padding: 10px;
+}
+
+.subHeader{
+  color: black;
+  font-family: Copperplate;
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  border: 15px;
+  padding: 5px;
+}
+
+.basicHeader{
+  font-family: Copperplate;
+  font-size: 45px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  border: 15px;
+  padding: 10px;
+}
+
+
+.productInformation {
+  font-size: 20px;
+  font-family: Copperplate;
+  position: absolute;
+  padding: 18px 16px;
+  left: 1%;
+  top: 20%;
+}
+
+.productInformationText{
+  font-size: 20px;
+  font-family: Dosis;
+  position: absolute;
+  padding: 18px 16px;
+  left: 1%;
+  top: 25%;
+}
+
+
+
+.memberOne {
+  font-size: 20px;
+  font-family: Copperplate;
+  position: absolute;
+  padding: 18px 16px;
+  left: 1%;
+  top: 35%;
+}
+.memberOneText {
+  font-size: 20px;
+  font-family: Dosis;
+  position: absolute;
+  padding: 18px 16px;
+  left: 1%;
+  top: 40%;
+}
+
+
+.memberTwo {
+  font-size: 20px;
+  font-family: Copperplate;
+  position: absolute;
+  padding: 18px 16px;
+  left: 1%;
+  top: 50%;
+}
+.memberTwoText {
+  font-size: 20px;
+  font-family: Dosis;
+  position: absolute;
+  padding: 18px 16px;
+  left: 1%;
+  top: 55%;
+}
+
+
+.memberThree {
+  font-size: 20px;
+  font-family: Copperplate;
+  position: absolute;
+  padding: 18px 16px;
+  left: 1%;
+  top: 65%;
+}
+.memberThreeText {
+  font-size: 20px;
+  font-family: Dosis;
+  position: absolute;
+  padding: 18px 16px;
+  left: 1%;
+  top: 70%;
+}
+
+.returnedResult{
+  font-family: Copperplate;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  border: 15px;
+  padding: 5px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+.returnedResult thead tr {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+}
+
+.returnedResult th,
+.returnedResult td {
+    padding: 12px 15px;
+}
+
+.returnedResult tbody tr {
+  
+  border-bottom: 1px solid #dddddd;
+}
+
+.returnedResult tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.returnedResult tbody tr:last-of-type {
+  border-bottom: 2px solid #000000;
+}
+
+.returnedResult tbody tr.active-row {
+  font-weight: bold;
+  color:#000000;
+}
+
+
+
+.endpointTable{
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  border: 35px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 0.9em;
+  min-width: 1000px;
+  min-height: 900px;
+}
+
+.endpointTable thead tr {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+}
+
+.endpointTable th,
+.endpointTable td {
+    padding: 12px 15px;
+}
+
+.endpointTable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.endpointTable tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.endpointTabletbody tr:last-of-type {
+  border-bottom: 2px solid #000000;
+}
+
+.endpointTable tbody tr.active-row {
+  font-weight: bold;
+  color:#000000;
 }
